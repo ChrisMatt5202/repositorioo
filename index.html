@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HydroPulso | Agua segura con tecnología (ODS 6)</title>
+  <meta name="description" content="HydroPulso: sensores y app que avisan cuando el agua no es segura. Proyecto ODS 6.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#inicio">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0C19 10 12 2 12 2z" fill="currentColor"/></svg>
+    HydroPulso
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav class="links" id="links">
+    <a href="#problema">Problema</a>
+    <a href="#solucion">Solución</a>
+    <a href="#demo">Probar</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#tecnologias">Tecnologías</a>
+    <a class="btn btn-sm" href="#contacto">Súmate</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-text">
+    <p class="ods-tag">ODS 6 · Agua limpia y saneamiento</p>
+    <h1>Que el agua te avise antes de que te enferme.</h1>
+    <p class="lead">HydroPulso usa sensores y una app para medir la calidad del agua en tiempo real y enviar alertas a tu celular cuando algo anda mal.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#demo">Probar la simulación</a>
+      <a class="btn btn-ghost" href="#problema">Ver el problema</a>
+    </div>
+  </div>
+
+  <div class="hero-art" aria-hidden="true">
+    <svg class="phone" viewBox="0 0 260 480">
+      <defs>
+        <clipPath id="screen"><rect x="14" y="14" width="232" height="452" rx="30"/></clipPath>
+        <linearGradient id="wg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#7AE0D6"/><stop offset="1" stop-color="#0E7C86"/>
+        </linearGradient>
+      </defs>
+      <rect width="260" height="480" rx="40" fill="#06293A"/>
+      <rect x="14" y="14" width="232" height="452" rx="30" fill="#EAF7F6"/>
+      <g clip-path="url(#screen)">
+        <g class="water-fill">
+          <path class="wave wave1" d="M0 0 Q 32 -18 65 0 T 130 0 T 195 0 T 260 0 T 325 0 T 390 0 T 455 0 V 520 H0z" fill="url(#wg)" opacity=".55"/>
+          <path class="wave wave2" d="M0 0 Q 32 -14 65 0 T 130 0 T 195 0 T 260 0 T 325 0 T 390 0 T 455 0 V 520 H0z" fill="url(#wg)"/>
+        </g>
+      </g>
+      <text x="130" y="70" text-anchor="middle" font-size="15" font-weight="700" fill="#06293A">Calidad del agua</text>
+      <text x="130" y="120" text-anchor="middle" font-size="44" font-weight="800" fill="#06293A">94%</text>
+      <rect x="50" y="145" width="160" height="34" rx="17" fill="#fff"/>
+      <circle cx="70" cy="162" r="6" fill="#2EC4B6"/>
+      <text x="85" y="167" font-size="13" font-weight="700" fill="#06293A">Apta para beber</text>
+    </svg>
+    <div class="alert-pop">
+      <strong>⚠ Alerta</strong>
+      <span>Turbidez alta en el tanque 2</span>
+    </div>
+    <span class="drop d1"></span><span class="drop d2"></span><span class="drop d3"></span>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="section" id="problema">
+  <div class="wrap">
+    <h2 class="reveal">Tomar agua no debería ser un riesgo</h2>
+    <p class="section-lead reveal">Muchas comunidades no saben si el agua que consumen es segura hasta que alguien se enferma. Las pruebas de laboratorio son lentas y poco frecuentes.</p>
+    <div class="stats">
+      <div class="stat reveal"><b data-count="2200" data-suffix="M">0</b><span>de personas en el mundo no tienen agua potable gestionada de forma segura (ONU)</span></div>
+      <div class="stat reveal"><b data-count="1000" data-suffix="M+">0</b><span>de personas no cuentan con servicios básicos de saneamiento adecuados</span></div>
+      <div class="stat reveal"><b data-count="3" data-suffix=" días">0</b><span>o más pueden tardar los resultados de un análisis tradicional (estimado)</span></div>
+    </div>
+    <p class="note reveal">Cifras aproximadas basadas en informes de la ONU/OMS.</p>
+  </div>
+</section>
+
+<!-- SOLUCIÓN -->
+<section class="section alt" id="solucion">
+  <div class="wrap">
+    <h2 class="reveal">Cómo funciona HydroPulso</h2>
+    <p class="section-lead reveal">Tres pasos, sin que nadie tenga que ir al laboratorio.</p>
+    <ol class="steps">
+      <li class="step reveal">
+        <div class="step-icon">📡</div>
+        <h3>Mide</h3>
+        <p>Un sensor sumergido en el tanque, pozo o río mide pH, turbidez y temperatura cada minuto.</p>
+      </li>
+      <li class="step reveal">
+        <div class="step-icon">☁️</div>
+        <h3>Analiza</h3>
+        <p>Los datos viajan por Wi-Fi a la nube, donde se comparan con los límites de agua segura.</p>
+      </li>
+      <li class="step reveal">
+        <div class="step-icon">📱</div>
+        <h3>Avisa</h3>
+        <p>Si algo sale del rango, la app envía una alerta y muestra un mapa de zonas en riesgo.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- DEMO INTERACTIVA -->
+<section class="section" id="demo">
+  <div class="wrap demo">
+    <div>
+      <h2 class="reveal">Pruébalo: simula un sensor</h2>
+      <p class="section-lead reveal">Elige una fuente de agua y mira cómo respondería la app. Los datos son de ejemplo.</p>
+      <div class="chips" id="chips" role="group" aria-label="Fuente de agua">
+        <button class="chip active" data-src="tanque">Tanque del barrio</button>
+        <button class="chip" data-src="rio">Río cercano</button>
+        <button class="chip" data-src="pozo">Pozo comunitario</button>
+      </div>
+    </div>
+    <div class="panel reveal" aria-live="polite">
+      <div class="gauge">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="52" class="g-bg"/>
+          <circle cx="60" cy="60" r="52" class="g-fg" id="gFg"/>
+        </svg>
+        <div class="g-text"><b id="gVal">94</b><small>/100</small></div>
+      </div>
+      <div class="readings">
+        <div class="status" id="status">Apta para beber</div>
+        <dl>
+          <div><dt>pH</dt><dd id="rPh">7.2</dd></div>
+          <div><dt>Turbidez</dt><dd id="rTur">0.8 NTU</dd></div>
+          <div><dt>Temperatura</dt><dd id="rTemp">16 °C</dd></div>
+        </dl>
+        <p id="advice">Todo en orden. Próxima medición en 1 minuto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="section alt" id="beneficios">
+  <div class="wrap">
+    <h2 class="reveal">¿Quién se beneficia?</h2>
+    <div class="benefits">
+      <article class="benefit reveal"><h3>Familias</h3><p>Saben si el agua del hogar es segura antes de beber o cocinar.</p></article>
+      <article class="benefit reveal"><h3>Comunidades rurales</h3><p>Detectan contaminación sin esperar días por un laboratorio.</p></article>
+      <article class="benefit reveal"><h3>Escuelas</h3><p>Protegen la salud de los estudiantes y enseñan ciencia con datos reales.</p></article>
+      <article class="benefit reveal"><h3>Gobiernos locales</h3><p>Priorizan reparaciones con un mapa de calidad del agua actualizado.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- TECNOLOGÍAS -->
+<section class="section" id="tecnologias">
+  <div class="wrap">
+    <h2 class="reveal">Tecnologías que lo hacen posible</h2>
+    <div class="tech reveal">
+      <span class="tech-item"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg>Sensores IoT (pH, turbidez)</span>
+      <span class="tech-item"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg>Microcontrolador ESP32</span>
+      <span class="tech-item"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor"/></svg>Conexión Wi-Fi / LoRa</span>
+      <span class="tech-item"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a4 4 0 0 1-.5-8A5.5 5.5 0 0 1 17 8.5a4.8 4.8 0 0 1 .5 9.5z"/></svg>Base de datos en la nube</span>
+      <span class="tech-item"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg>Inteligencia artificial para detectar anomalías</span>
+      <span class="tech-item"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>App móvil y notificaciones</span>
+      <span class="tech-item"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.5-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.5 12 21 12 21z"/><circle cx="12" cy="10" r="2.3"/></svg>Mapas en tiempo real</span>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contacto">
+  <div class="wrap cta-box">
+    <h2>Lleva agua segura a tu comunidad</h2>
+    <p>Déjanos tu correo y te avisamos cuando esté listo.</p>
+    <form id="form" novalidate>
+      <label class="sr" for="email">Correo electrónico</label>
+      <input id="email" type="email" placeholder="tucorreo@ejemplo.com" required>
+      <button class="btn btn-light" type="submit">Quiero ser parte</button>
+    </form>
+    <p class="form-msg" id="msg" role="status"></p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <p>HydroPulso · ODS 6: Agua limpia y saneamiento</p>
+  <p class="credit">Desarrollado por Christian Fajardo</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
